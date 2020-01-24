@@ -5,15 +5,15 @@ public class Main {
     public static void main(String[] args) {
         // Variable/Array Declarations and Assignments.
         int[] highTemperature = {45, 29, 10, 22, 41, 28, 33};
-        int[] percipitation = {95, 60, 25, 5, 0, 75, 90};
+        int[] precipitation = {95, 60, 25, 5, 0, 75, 90};
         String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
         System.out.println("This week's days with chances of snow:");
         // Using a for loop to count the number of indexes for each array since all three arrays have the same number of indexes.
         for (int i = 0; i < highTemperature.length; i++) {
-            if (highTemperature[i] <= 32 && percipitation[i] > 50) {
+            if (highTemperature[i] <= 32 && precipitation[i] > 50) {
                 System.out.println(days[i] + " - Temperature: " + highTemperature[i]
-                        + "° Fahrenheit; Percipitation: " + percipitation[i] + "%");
+                        + "° Fahrenheit; Precipitation: " + precipitation[i] + "%");
             }
         }
     }
